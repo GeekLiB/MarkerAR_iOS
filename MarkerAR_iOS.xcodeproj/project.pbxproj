@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6553F671FEE309800DF4598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6553F661FEE309800DF4598 /* AppDelegate.m */; };
+		B6553F6A1FEE309800DF4598 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6553F691FEE309800DF4598 /* ViewController.mm */; };
+		B6553F6D1FEE309800DF4598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6553F6B1FEE309800DF4598 /* Main.storyboard */; };
+		B6553F6F1FEE309800DF4598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6553F6E1FEE309800DF4598 /* Assets.xcassets */; };
+		B6553F721FEE309800DF4598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6553F701FEE309800DF4598 /* LaunchScreen.storyboard */; };
+		B6553F751FEE309800DF4598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6553F741FEE309800DF4598 /* main.m */; };
+		B6553F7F1FEE309900DF4598 /* MarkerAR_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6553F7E1FEE309900DF4598 /* MarkerAR_iOSTests.m */; };
+		B6553F8A1FEE309900DF4598 /* MarkerAR_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6553F891FEE309900DF4598 /* MarkerAR_iOSUITests.m */; };
+		B6553F981FEE30D500DF4598 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6553F971FEE30D500DF4598 /* opencv2.framework */; };
+		B6553F9A1FEE318D00DF4598 /* lee.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6553F991FEE318D00DF4598 /* lee.jpeg */; };
+		B68940A11FF2458F009540A2 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B68940A01FF2458F009540A2 /* timg.jpeg */; };
+		B6A469041FEE344700AA5893 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469031FEE344700AA5893 /* ImageIO.framework */; };
+		B6A469061FEE344D00AA5893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469051FEE344D00AA5893 /* CoreGraphics.framework */; };
+		B6A469081FEE345200AA5893 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469071FEE345200AA5893 /* CoreImage.framework */; };
+		B6A4690A1FEE345900AA5893 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469091FEE345900AA5893 /* CoreMedia.framework */; };
+		B6A4690C1FEE345E00AA5893 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A4690B1FEE345E00AA5893 /* CoreVideo.framework */; };
+		B6A4690E1FEE346200AA5893 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A4690D1FEE346200AA5893 /* Accelerate.framework */; };
+		B6A469101FEE346800AA5893 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A4690F1FEE346800AA5893 /* AssetsLibrary.framework */; };
+		B6A469121FEE346E00AA5893 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469111FEE346E00AA5893 /* AVFoundation.framework */; };
+		B6A469141FEE347200AA5893 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469131FEE347200AA5893 /* QuartzCore.framework */; };
+		B6A469161FEE347600AA5893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469151FEE347600AA5893 /* UIKit.framework */; };
+		B6A469181FEE347B00AA5893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A469171FEE347B00AA5893 /* Foundation.framework */; };
+		B6A4691C1FEE34BC00AA5893 /* MarkerRecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6A4691A1FEE34BC00AA5893 /* MarkerRecognizer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6553F7B1FEE309800DF4598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6553F5A1FEE309800DF4598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6553F611FEE309800DF4598;
+			remoteInfo = MarkerAR_iOS;
+		};
+		B6553F861FEE309900DF4598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6553F5A1FEE309800DF4598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6553F611FEE309800DF4598;
+			remoteInfo = MarkerAR_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6553F621FEE309800DF4598 /* MarkerAR_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkerAR_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6553F651FEE309800DF4598 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6553F661FEE309800DF4598 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6553F681FEE309800DF4598 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6553F691FEE309800DF4598 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B6553F6C1FEE309800DF4598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6553F6E1FEE309800DF4598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6553F711FEE309800DF4598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6553F731FEE309800DF4598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6553F741FEE309800DF4598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6553F7A1FEE309800DF4598 /* MarkerAR_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkerAR_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6553F7E1FEE309900DF4598 /* MarkerAR_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkerAR_iOSTests.m; sourceTree = "<group>"; };
+		B6553F801FEE309900DF4598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6553F851FEE309900DF4598 /* MarkerAR_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkerAR_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6553F891FEE309900DF4598 /* MarkerAR_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkerAR_iOSUITests.m; sourceTree = "<group>"; };
+		B6553F8B1FEE309900DF4598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6553F971FEE30D500DF4598 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		B6553F991FEE318D00DF4598 /* lee.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lee.jpeg; sourceTree = "<group>"; };
+		B68940A01FF2458F009540A2 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		B6A469031FEE344700AA5893 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B6A469051FEE344D00AA5893 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6A469071FEE345200AA5893 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B6A469091FEE345900AA5893 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B6A4690B1FEE345E00AA5893 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B6A4690D1FEE346200AA5893 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B6A4690F1FEE346800AA5893 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B6A469111FEE346E00AA5893 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6A469131FEE347200AA5893 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B6A469151FEE347600AA5893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6A469171FEE347B00AA5893 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6A4691A1FEE34BC00AA5893 /* MarkerRecognizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarkerRecognizer.cpp; sourceTree = "<group>"; };
+		B6A4691B1FEE34BC00AA5893 /* MarkerRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerRecognizer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6553F5F1FEE309800DF4598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A469181FEE347B00AA5893 /* Foundation.framework in Frameworks */,
+				B6A469161FEE347600AA5893 /* UIKit.framework in Frameworks */,
+				B6A469141FEE347200AA5893 /* QuartzCore.framework in Frameworks */,
+				B6A469121FEE346E00AA5893 /* AVFoundation.framework in Frameworks */,
+				B6A469101FEE346800AA5893 /* AssetsLibrary.framework in Frameworks */,
+				B6A4690E1FEE346200AA5893 /* Accelerate.framework in Frameworks */,
+				B6A4690C1FEE345E00AA5893 /* CoreVideo.framework in Frameworks */,
+				B6A4690A1FEE345900AA5893 /* CoreMedia.framework in Frameworks */,
+				B6A469081FEE345200AA5893 /* CoreImage.framework in Frameworks */,
+				B6A469061FEE344D00AA5893 /* CoreGraphics.framework in Frameworks */,
+				B6A469041FEE344700AA5893 /* ImageIO.framework in Frameworks */,
+				B6553F981FEE30D500DF4598 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6553F771FEE309800DF4598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6553F821FEE309900DF4598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6553F591FEE309800DF4598 = {
+			isa = PBXGroup;
+			children = (
+				B6A469191FEE34B200AA5893 /* MarkerRecognizer */,
+				B6553F971FEE30D500DF4598 /* opencv2.framework */,
+				B6553F641FEE309800DF4598 /* MarkerAR_iOS */,
+				B6553F7D1FEE309900DF4598 /* MarkerAR_iOSTests */,
+				B6553F881FEE309900DF4598 /* MarkerAR_iOSUITests */,
+				B6553F631FEE309800DF4598 /* Products */,
+				B6A469021FEE344700AA5893 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6553F631FEE309800DF4598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6553F621FEE309800DF4598 /* MarkerAR_iOS.app */,
+				B6553F7A1FEE309800DF4598 /* MarkerAR_iOSTests.xctest */,
+				B6553F851FEE309900DF4598 /* MarkerAR_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6553F641FEE309800DF4598 /* MarkerAR_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B68940A01FF2458F009540A2 /* timg.jpeg */,
+				B6553F991FEE318D00DF4598 /* lee.jpeg */,
+				B6553F651FEE309800DF4598 /* AppDelegate.h */,
+				B6553F661FEE309800DF4598 /* AppDelegate.m */,
+				B6553F681FEE309800DF4598 /* ViewController.h */,
+				B6553F691FEE309800DF4598 /* ViewController.mm */,
+				B6553F6B1FEE309800DF4598 /* Main.storyboard */,
+				B6553F6E1FEE309800DF4598 /* Assets.xcassets */,
+				B6553F701FEE309800DF4598 /* LaunchScreen.storyboard */,
+				B6553F731FEE309800DF4598 /* Info.plist */,
+				B6553F741FEE309800DF4598 /* main.m */,
+			);
+			path = MarkerAR_iOS;
+			sourceTree = "<group>";
+		};
+		B6553F7D1FEE309900DF4598 /* MarkerAR_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6553F7E1FEE309900DF4598 /* MarkerAR_iOSTests.m */,
+				B6553F801FEE309900DF4598 /* Info.plist */,
+			);
+			path = MarkerAR_iOSTests;
+			sourceTree = "<group>";
+		};
+		B6553F881FEE309900DF4598 /* MarkerAR_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6553F891FEE309900DF4598 /* MarkerAR_iOSUITests.m */,
+				B6553F8B1FEE309900DF4598 /* Info.plist */,
+			);
+			path = MarkerAR_iOSUITests;
+			sourceTree = "<group>";
+		};
+		B6A469021FEE344700AA5893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A469171FEE347B00AA5893 /* Foundation.framework */,
+				B6A469151FEE347600AA5893 /* UIKit.framework */,
+				B6A469131FEE347200AA5893 /* QuartzCore.framework */,
+				B6A469111FEE346E00AA5893 /* AVFoundation.framework */,
+				B6A4690F1FEE346800AA5893 /* AssetsLibrary.framework */,
+				B6A4690D1FEE346200AA5893 /* Accelerate.framework */,
+				B6A4690B1FEE345E00AA5893 /* CoreVideo.framework */,
+				B6A469091FEE345900AA5893 /* CoreMedia.framework */,
+				B6A469071FEE345200AA5893 /* CoreImage.framework */,
+				B6A469051FEE344D00AA5893 /* CoreGraphics.framework */,
+				B6A469031FEE344700AA5893 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6A469191FEE34B200AA5893 /* MarkerRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				B6A4691A1FEE34BC00AA5893 /* MarkerRecognizer.cpp */,
+				B6A4691B1FEE34BC00AA5893 /* MarkerRecognizer.h */,
+			);
+			path = MarkerRecognizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6553F611FEE309800DF4598 /* MarkerAR_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6553F8E1FEE309900DF4598 /* Build configuration list for PBXNativeTarget "MarkerAR_iOS" */;
+			buildPhases = (
+				B6553F5E1FEE309800DF4598 /* Sources */,
+				B6553F5F1FEE309800DF4598 /* Frameworks */,
+				B6553F601FEE309800DF4598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkerAR_iOS;
+			productName = MarkerAR_iOS;
+			productReference = B6553F621FEE309800DF4598 /* MarkerAR_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6553F791FEE309800DF4598 /* MarkerAR_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6553F911FEE309900DF4598 /* Build configuration list for PBXNativeTarget "MarkerAR_iOSTests" */;
+			buildPhases = (
+				B6553F761FEE309800DF4598 /* Sources */,
+				B6553F771FEE309800DF4598 /* Frameworks */,
+				B6553F781FEE309800DF4598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6553F7C1FEE309800DF4598 /* PBXTargetDependency */,
+			);
+			name = MarkerAR_iOSTests;
+			productName = MarkerAR_iOSTests;
+			productReference = B6553F7A1FEE309800DF4598 /* MarkerAR_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6553F841FEE309900DF4598 /* MarkerAR_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6553F941FEE309900DF4598 /* Build configuration list for PBXNativeTarget "MarkerAR_iOSUITests" */;
+			buildPhases = (
+				B6553F811FEE309900DF4598 /* Sources */,
+				B6553F821FEE309900DF4598 /* Frameworks */,
+				B6553F831FEE309900DF4598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6553F871FEE309900DF4598 /* PBXTargetDependency */,
+			);
+			name = MarkerAR_iOSUITests;
+			productName = MarkerAR_iOSUITests;
+			productReference = B6553F851FEE309900DF4598 /* MarkerAR_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6553F5A1FEE309800DF4598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = AlbertLee;
+				TargetAttributes = {
+					B6553F611FEE309800DF4598 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					B6553F791FEE309800DF4598 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B6553F611FEE309800DF4598;
+					};
+					B6553F841FEE309900DF4598 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B6553F611FEE309800DF4598;
+					};
+				};
+			};
+			buildConfigurationList = B6553F5D1FEE309800DF4598 /* Build configuration list for PBXProject "MarkerAR_iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6553F591FEE309800DF4598;
+			productRefGroup = B6553F631FEE309800DF4598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6553F611FEE309800DF4598 /* MarkerAR_iOS */,
+				B6553F791FEE309800DF4598 /* MarkerAR_iOSTests */,
+				B6553F841FEE309900DF4598 /* MarkerAR_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6553F601FEE309800DF4598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68940A11FF2458F009540A2 /* timg.jpeg in Resources */,
+				B6553F721FEE309800DF4598 /* LaunchScreen.storyboard in Resources */,
+				B6553F6F1FEE309800DF4598 /* Assets.xcassets in Resources */,
+				B6553F9A1FEE318D00DF4598 /* lee.jpeg in Resources */,
+				B6553F6D1FEE309800DF4598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6553F781FEE309800DF4598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6553F831FEE309900DF4598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6553F5E1FEE309800DF4598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6553F6A1FEE309800DF4598 /* ViewController.mm in Sources */,
+				B6553F751FEE309800DF4598 /* main.m in Sources */,
+				B6553F671FEE309800DF4598 /* AppDelegate.m in Sources */,
+				B6A4691C1FEE34BC00AA5893 /* MarkerRecognizer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6553F761FEE309800DF4598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6553F7F1FEE309900DF4598 /* MarkerAR_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6553F811FEE309900DF4598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6553F8A1FEE309900DF4598 /* MarkerAR_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6553F7C1FEE309800DF4598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6553F611FEE309800DF4598 /* MarkerAR_iOS */;
+			targetProxy = B6553F7B1FEE309800DF4598 /* PBXContainerItemProxy */;
+		};
+		B6553F871FEE309900DF4598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6553F611FEE309800DF4598 /* MarkerAR_iOS */;
+			targetProxy = B6553F861FEE309900DF4598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6553F6B1FEE309800DF4598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6553F6C1FEE309800DF4598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6553F701FEE309800DF4598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6553F711FEE309800DF4598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6553F8C1FEE309900DF4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6553F8D1FEE309900DF4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6553F8F1FEE309900DF4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDH6VTHWKR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MarkerAR_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mars.AR-iphone7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6553F901FEE309900DF4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDH6VTHWKR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MarkerAR_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mars.AR-iphone7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6553F921FEE309900DF4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDH6VTHWKR;
+				INFOPLIST_FILE = MarkerAR_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mars.AR-iphone7.MarkerAR-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkerAR_iOS.app/MarkerAR_iOS";
+			};
+			name = Debug;
+		};
+		B6553F931FEE309900DF4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDH6VTHWKR;
+				INFOPLIST_FILE = MarkerAR_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mars.AR-iphone7.MarkerAR-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkerAR_iOS.app/MarkerAR_iOS";
+			};
+			name = Release;
+		};
+		B6553F951FEE309900DF4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDH6VTHWKR;
+				INFOPLIST_FILE = MarkerAR_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mars.AR-iphone7.MarkerAR-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarkerAR_iOS;
+			};
+			name = Debug;
+		};
+		B6553F961FEE309900DF4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDH6VTHWKR;
+				INFOPLIST_FILE = MarkerAR_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mars.AR-iphone7.MarkerAR-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarkerAR_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6553F5D1FEE309800DF4598 /* Build configuration list for PBXProject "MarkerAR_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6553F8C1FEE309900DF4598 /* Debug */,
+				B6553F8D1FEE309900DF4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6553F8E1FEE309900DF4598 /* Build configuration list for PBXNativeTarget "MarkerAR_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6553F8F1FEE309900DF4598 /* Debug */,
+				B6553F901FEE309900DF4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6553F911FEE309900DF4598 /* Build configuration list for PBXNativeTarget "MarkerAR_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6553F921FEE309900DF4598 /* Debug */,
+				B6553F931FEE309900DF4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6553F941FEE309900DF4598 /* Build configuration list for PBXNativeTarget "MarkerAR_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6553F951FEE309900DF4598 /* Debug */,
+				B6553F961FEE309900DF4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6553F5A1FEE309800DF4598 /* Project object */;
+}
